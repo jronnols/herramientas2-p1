@@ -5,12 +5,13 @@
 
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 /**
  * Write any other JavaScript below
  */
 
-+( function() {
-  const university = "UOC";
-  console.log(`Hello, ${university}!`);
-} )();
++(function () {
+  AOS.init();
+})();
