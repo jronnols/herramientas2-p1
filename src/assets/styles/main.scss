@@ -6,26 +6,40 @@
 /**
  * Import variables
  */
-
 @import "variables";
 
 /**
  * Import npm dependencies
- * see: https://v2.parceljs.org/features/module-resolution/
- * see commented examples below
  */
-
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
 @import "npm:aos/dist/aos.css";
 
 /**
- * Import layouts
- * It's a best practice to use a different partial for each page
+ * Import themes
  */
+@import "theme/default";
 
-@import "layouts/home";
+/**
+ * Import base
+ */
+@import "base/base";
+
+/**
+ * Import layouts
+ */
+@import "layout/header";
+@import "layout/footer";
+@import "layout/page";
+
+/**
+ * Import modules
+ */
+@import "module/section";
+
+/**
+ * Import states
+ */
+@import "state/states";
 
 /**
  * Do NOT include anything else in this file!

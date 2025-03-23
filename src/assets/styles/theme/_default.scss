@@ -1,0 +1,12 @@
+@use "sass:color";
+
+// Colores primarios
+$primary-color: #2E86C1; // Azul fuerte
+$secondary-color: #F9E79F; // Amarillo suave
+$accent-color: #1D4E89; // Azul marino
+$bg-color: color.scale($secondary-color, $lightness: 90%); // Fondo más suave
+
+// Colores de texto
+$text-color: #333;
+$link-color: $primary-color;
+$link-hover-color: color.scale($primary-color, $lightness: -20%);
