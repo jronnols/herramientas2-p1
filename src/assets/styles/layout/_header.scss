@@ -44,6 +44,14 @@
         font-weight: bold;
         padding: 0.5rem;
         display: block;
+        transition: background-color 0.5s ease;
+        border-radius: 10px;
+
+        &:hover,
+        &:focus {
+            background-color: adjust-bg-color($primary-color, -20%); // Oscurecer el color primario
+            color: white;
+        }
     }
 
     @media (min-width: $mqMinWidth) {

@@ -1,0 +1,11 @@
+@use "sass:color";
+
+// Función para reduce el ancho máximo de un elemento, en base a un valor dado.
+@function reduce-max-width($base-width, $percentage: 0.6) {
+	@return $base-width * $percentage;
+}
+
+// Función para ajustar el color de fondo de un elemento.
+@function adjust-bg-color($color, $amount: -20%) {
+	@return color.adjust($color, $lightness: $amount);
+}
