@@ -17,8 +17,26 @@
     &__logo {
         width: 60px;
         height: auto;
-        margin-top: 1rem;
+        margin-bottom: 1rem;
         border-radius: 50%;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    &__source {
+        font-size: 0.75rem;
+        font-style: italic;
+    }
+
+    &__link {
+        color: white;
+        font-weight: bold;
+    }
+
+    @media (min-width: $mqMinWidth) {
+        &__container {
+            flex-direction: row;
+            justify-content: center;
+            gap: 2rem;
+        }
     }
 }
