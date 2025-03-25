@@ -1,7 +1,7 @@
 @use "sass:color";
 
 // Colores primarios
-$primary-color: #2E86C1; // Azul fuerte
+$primary-color: #226A99; // Azul fuerte
 $secondary-color: #F9E79F; // Amarillo suave
 $accent-color: #1D4E89; // Azul marino
 $bg-color: color.scale($secondary-color, $lightness: 90%); // Fondo más suave
